@@ -37,7 +37,7 @@ Ran `tests/unit/test_batch_processor.py::TestBatchEmbeddingProcessor::test_empty
 
 **PLAN.md link:** https://github.com/MuratAlkan06/pathreview/blob/fix/159-structlog-caplog-capture/PLAN.md
 
-**Walkthrough video (recommended):** _to be added after recording_
+**Walkthrough video (recommended):** https://www.loom.com/share/ffa77d3f137d45bcb8becef73ef54858
 
 **Blockers or open questions:**
 Maintainer preference between reusing `core.logging.configure_logging()` in tests (Option A) vs. the test-scoped structlog config I implemented (Option B); `configure_logging()` is never called at API startup — likely a separate issue to file; repo-wide `ruff`/`black`/`mypy` are already failing on `main`, so lint acceptance is scoped to the files this fix touches.
